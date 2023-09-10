@@ -16,14 +16,14 @@ export default function Canvas() {
     ]);
     const [id, setId] = useState(children.length);
     function removeMark(id) {
-      console.log(children);
-      console.log('id: ' + id);
+      // console.log(children);
+      // console.log('id: ' + id);
       let newChildren = children.filter((child) => child.key !== id);
-      console.log(newChildren)
+      // console.log(newChildren)
       setChildren(newChildren);
     }
     function canvasClick(e) {
-      console.log('add');
+      // console.log('add');
       let bounds = e.target.getBoundingClientRect();
       let style = {
           top: e.clientY - bounds.top - 20,
@@ -41,7 +41,7 @@ export default function Canvas() {
       setChildren(newChildren);
       setId(id + 1);
     }
-    console.log(children)
+    // console.log(children)
     
     return (
       <div className='canvas' onClick={canvasClick}>

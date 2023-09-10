@@ -1,6 +1,9 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
+  "name": "react-canvas_marks",
+  "version": "0.1",
+  "description": "Demo app adding/removing marks to/from a canvas",
+  "main": "app.js",
+  "author": "misterbobr",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",

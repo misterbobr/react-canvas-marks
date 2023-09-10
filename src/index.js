@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import './style.css';
+import CanvasSection from './react/components/CanvasSection';
+import HeadingSection from './react/components/HeadingSection';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <HeadingSection />
+    <CanvasSection />
   </React.StrictMode>
 );
 

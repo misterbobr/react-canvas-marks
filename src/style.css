@@ -1,0 +1,150 @@
+body, body * {
+  margin: 0;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+#root * {
+  box-sizing: content-box;
+}
+#root .container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+#root .section_heading {
+  padding-top: 20px;
+}
+#root .section_heading h1 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  font-size: 60px;
+}
+#root .section_canvas {
+  padding: 50px 20px;
+}
+#root .section_canvas .canvas {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+#root .section_canvas .canvas .bg {
+  width: 100%;
+}
+#root .section_canvas .canvas .mark {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  outline: rgba(0, 0, 0, 0.7) 1px solid;
+  border-radius: 50%;
+  padding: 0;
+  transition: width 0.3s 0.05s ease-out, height 0.3s 0.05s ease-out, border-radius 0.29s 0.08s ease-out, padding 0.3s 0.05s linear, z-index 0.01s 0.3s;
+  z-index: 1;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.7);
+}
+#root .section_canvas .canvas .mark:hover {
+  width: 300px;
+  height: 200px;
+  border-radius: 15px;
+  padding: 10px;
+  transition: width 0.3s ease-out, height 0.3s ease-out, border-radius 0.03s ease-out, padding 0.3s linear;
+  z-index: 10;
+}
+#root .section_canvas .canvas .mark:hover .user_wr {
+  width: 100px;
+  height: 100%;
+  transition: height 0.3s ease-out, width 0.3s ease-out, margin 0.3s ease-out;
+}
+#root .section_canvas .canvas .mark:hover .user_wr .avatar {
+  margin: 0 auto;
+  width: 80px;
+}
+#root .section_canvas .canvas .mark:hover .user_wr .username {
+  opacity: 1;
+  transition: opacity 0.2s 0.25s;
+}
+#root .section_canvas .canvas .mark:hover .user_wr .delete {
+  opacity: 1;
+  transition: opacity 0.2s 0.25s;
+}
+#root .section_canvas .canvas .mark:hover .location_wr {
+  opacity: 1;
+  transition: opacity 0.2s 0.25s;
+}
+#root .section_canvas .canvas .mark .user_wr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  transition: height 0.3s ease-out, width 0.3s ease-out, margin 0.3s ease-out;
+  flex-shrink: 0;
+}
+#root .section_canvas .canvas .mark .user_wr .avatar {
+  width: 40px;
+  height: auto;
+  margin: 0;
+  border-radius: 50%;
+  transition: margin 0.3s ease-out, width 0.3s ease-out, height 0.3s ease-out;
+}
+#root .section_canvas .canvas .mark .user_wr .username {
+  width: -moz-fit-content;
+  width: fit-content;
+  text-wrap: wrap;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  font-size: 18px;
+  text-decoration: underline;
+  color: #05f;
+  opacity: 0;
+  transition: opacity 0.05s;
+  text-align: center;
+  cursor: pointer;
+}
+#root .section_canvas .canvas .mark .user_wr .username:hover {
+  color: purple;
+}
+#root .section_canvas .canvas .mark .user_wr .delete {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: auto;
+  text-wrap: nowrap;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  font-size: 14px;
+  text-decoration: underline;
+  color: rgb(205, 59, 59);
+  opacity: 0;
+  transition: opacity 0.05s;
+  text-align: center;
+  cursor: pointer;
+}
+#root .section_canvas .canvas .mark .location_wr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  opacity: 0;
+  transition: opacity 0.05s;
+}
+#root .section_canvas .canvas .mark .location_wr .location_name {
+  width: 100%;
+  text-wrap: wrap;
+  font-family: "Roboto Slab", serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: black;
+  text-align: center;
+}
+#root .section_canvas .canvas .mark .location_wr .location_img {
+  width: 90%;
+  margin-top: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.7);
+}/*# sourceMappingURL=style.css.map */

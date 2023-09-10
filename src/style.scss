@@ -1,0 +1,156 @@
+body, body * {
+    margin: 0;
+}
+#root {
+    width: 100%;
+    height: 100%;
+    * {
+        box-sizing: content-box;
+    }
+    .container {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    .section_heading {
+        padding-top: 20px;
+        h1 {
+            font-family: 'Roboto Slab', serif;
+            font-weight: 400;
+            font-size: 60px;
+        }
+    }
+    .section_canvas {
+        padding: 50px 20px;
+        .canvas {
+            position: relative;
+            // background-color: antiquewhite;
+            // background-image: url('/public/img/moscow_map.png');
+            // background-size: 100%;
+            width: 100%;
+            height: auto;
+            .bg {
+                width: 100%;
+            }
+            .mark {
+                overflow: hidden;
+                display: flex;
+                flex-direction: row;
+                gap: 15px;
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                outline: rgba(0, 0, 0, 0.7) 1px solid;
+                border-radius: 50%;
+                padding: 0;
+                transition: width 0.3s 0.05s ease-out, height 0.3s 0.05s ease-out, border-radius 0.29s 0.08s ease-out, padding 0.3s 0.05s linear, z-index 0.01s 0.3s;
+                z-index: 1;
+                box-shadow: 0px 0px 4px 1px rgb(0 0 0 / 70%);
+                &:hover {
+                    width: 300px;
+                    height: 200px;
+                    border-radius: 15px;
+                    padding: 10px;
+                    transition: width 0.3s ease-out, height 0.3s ease-out, border-radius 0.03s ease-out, padding 0.3s linear;
+                    z-index: 10;
+                    .user_wr {
+                        width: 100px;
+                        height: 100%;
+                        // margin: 50px 0;
+                        transition: height 0.3s ease-out, width 0.3s ease-out, margin 0.3s ease-out;
+                        .avatar {
+                            margin: 0 auto;
+                            width: 80px;
+                        }
+                        .username {
+                            opacity: 1;
+                            transition: opacity 0.2s 0.25s;
+                        }
+                        .delete {
+                            opacity: 1;
+                            transition: opacity 0.2s 0.25s;
+                        }
+                    }
+                    .location_wr {
+                        opacity: 1;
+                        transition: opacity 0.2s 0.25s;
+                        // .location_name {
+
+                        // }
+                    }
+                }
+                .user_wr {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 40px;
+                    height: 40px;
+                    margin: 0;
+                    transition: height 0.3s ease-out, width 0.3s ease-out, margin 0.3s ease-out;
+                    // overflow: hidden;
+                    flex-shrink: 0;
+                    .avatar {
+                        width: 40px;
+                        height: auto;
+                        margin: 0;
+                        border-radius: 50%;
+                        transition: margin 0.3s ease-out, width 0.3s ease-out, height 0.3s ease-out;
+                    }
+                    .username {
+                        width: fit-content;
+                        text-wrap: wrap;
+                        font-family: 'Roboto Slab', serif;
+                        font-weight: 300;
+                        font-size: 18px;
+                        text-decoration: underline;
+                        color: #05f;
+                        opacity: 0;
+                        transition: opacity 0.05s;
+                        text-align: center;
+                        cursor: pointer;
+                        &:hover {
+                            color: purple;
+                        }
+                    }
+                    .delete {
+                        width: fit-content;
+                        margin-top: auto;
+                        text-wrap: nowrap;
+                        font-family: 'Roboto Slab', serif;
+                        font-weight: 300;
+                        font-size: 14px;
+                        text-decoration: underline;
+                        color: rgb(205, 59, 59);
+                        opacity: 0;
+                        transition: opacity 0.05s;
+                        text-align: center;
+                        cursor: pointer;
+                    }
+                }
+                .location_wr {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    flex-grow: 1;
+                    opacity: 0;
+                    transition: opacity 0.05s;
+                    // overflow: hidden;
+                    .location_name {
+                        width: 100%;    
+                        text-wrap: wrap;
+                        font-family: 'Roboto Slab', serif;
+                        font-weight: 500;
+                        font-size: 24px;
+                        color: black;
+                        text-align: center;
+                    }
+                    .location_img {
+                        width: 90%;
+                        margin-top: 10px;
+                        text-align: center;
+                        box-shadow: 0px 0px 4px 1px rgb(0 0 0 / 70%);
+                    }
+                }
+            }
+        }
+    }
+}

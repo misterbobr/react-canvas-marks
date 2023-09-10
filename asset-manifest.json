@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-canvas-marks/static/css/main.143bf485.css",
-    "main.js": "/react-canvas-marks/static/js/main.e4502f16.js",
+    "main.js": "/react-canvas-marks/static/js/main.61b032a9.js",
     "static/js/787.b9680b42.chunk.js": "/react-canvas-marks/static/js/787.b9680b42.chunk.js",
     "index.html": "/react-canvas-marks/index.html",
     "main.143bf485.css.map": "/react-canvas-marks/static/css/main.143bf485.css.map",
-    "main.e4502f16.js.map": "/react-canvas-marks/static/js/main.e4502f16.js.map",
+    "main.61b032a9.js.map": "/react-canvas-marks/static/js/main.61b032a9.js.map",
     "787.b9680b42.chunk.js.map": "/react-canvas-marks/static/js/787.b9680b42.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.143bf485.css",
-    "static/js/main.e4502f16.js"
+    "static/js/main.61b032a9.js"
   ]
 }

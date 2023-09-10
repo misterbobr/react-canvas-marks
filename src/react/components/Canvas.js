@@ -4,7 +4,7 @@ import CanvasMark from './CanvasMark';
 
 export default function Canvas() {
     const user = {
-      avatar: "/img/avatar.jpg",
+      avatar: "img/avatar.jpg",
       name: "John Doe"
     };
     const [children, setChildren] = useState([
@@ -45,7 +45,7 @@ export default function Canvas() {
     
     return (
       <div className='canvas' onClick={canvasClick}>
-        <img className='bg' src='/img/moscow_map.png'/>
+        <img className='bg' src='img/moscow_map.png'/>
         { children.length > 0 &&
           children.map((child, i) => <CanvasMark key={child.key} style={child.props.style} user={child.props.user} location={child.props.location} remove={() => removeMark(child.key)}/>) }
       </div>
